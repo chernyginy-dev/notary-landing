@@ -5,7 +5,7 @@ The project focuses on a clean, professional design with a minimal layout and sm
 
 ## 🌐 Live Demo
 
-https://chernyginy-dev.github.io/notary-services-landing
+https://chernyginy-dev.github.io/notary-landing
 
 ## ✨ Features
 
