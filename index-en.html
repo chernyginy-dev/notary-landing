@@ -8,8 +8,8 @@
       name="description"
       content="Private notary in Kyiv, Ukraine. Document notarization, powers of attorney, real estate, apostille. Book a consultation today."
     />
-    <link rel="alternate" hreflang="en" href="notary-en.html" />
-    <link rel="alternate" hreflang="uk" href="notary-ua.html" />
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+    <link rel="alternate" hreflang="uk" href="index.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1100,9 +1100,12 @@
           grid-template-columns: 1fr;
         }
         .hero-left {
-          padding: 48px 0;
+          padding: 48px 0 !important;
           border-right: none;
           border-bottom: 1px solid var(--rule);
+        }
+        .hero-left > div {
+          padding-bottom: 48px;
         }
         .hero-right {
           height: 50vw;
@@ -1138,7 +1141,7 @@
           border-bottom: 1px solid var(--rule);
         }
         .about-text-col {
-          padding: 48px 0;
+          padding: 48px 28px;
         }
         .process-step {
           grid-template-columns: 50px 1fr;
@@ -1238,12 +1241,12 @@
         </nav>
         <div class="header-right">
           <div class="lang-toggle">
-            <button class="lang-btn" onclick="location.href = 'notary-ua.html'">
+            <button class="lang-btn" onclick="location.href = 'index.html'">
               UA
             </button>
             <button
               class="lang-btn on"
-              onclick="location.href = 'notary-en.html'"
+              onclick="location.href = 'index-en.html'"
             >
               EN
             </button>
@@ -1297,10 +1300,10 @@
       <div class="mob-foot">
         <div class="mob-lang">
           <button class="lang-btn" onclick="location.href = 'index.html'">
-            Українська
+            Укр
           </button>
-          <button class="lang-btn on" onclick="location.href = 'en.html'">
-            English
+          <button class="lang-btn on" onclick="location.href = 'index-en.html'">
+            Eng
           </button>
         </div>
       </div>
@@ -1938,8 +1941,9 @@
                   stroke-width="2"
                 >
                   <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" /></svg
-              ></a>
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
             </div>
             <div class="contact-col" data-sr="up" data-delay="80">
               <span class="t-label" style="margin-bottom: 20px; display: block"
@@ -1956,8 +1960,9 @@
                   stroke-width="2"
                 >
                   <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" /></svg
-              ></a>
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
             </div>
             <div class="contact-col" data-sr="up" data-delay="160">
               <span class="t-label" style="margin-bottom: 20px; display: block"
