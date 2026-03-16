@@ -1,0 +1,2248 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Нотаріус Олена Лисенко — Нотаріальні послуги</title>
+    <meta
+      name="description"
+      content="Приватний нотаріус у Києві. Посвідчення документів, довіреності, нерухомість, апостиль. Запишіться на консультацію."
+    />
+    <link rel="alternate" hreflang="uk" href="notary-ua.html" />
+    <link rel="alternate" hreflang="en" href="notary-en.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Figtree:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* =====================================================
+   DESIGN SYSTEM — Swiss Editorial Minimalism
+   Palette: Warm white · Charcoal · Ink · Stone gray
+   Fonts: Playfair Display (display) · Figtree (body)
+===================================================== */
+      :root {
+        --ink: #1a1a18;
+        --charcoal: #2e2e2b;
+        --stone: #76756e;
+        --warm-gray: #f2f0eb;
+        --off-white: #f8f7f4;
+        --white: #ffffff;
+        --rule: rgba(26, 26, 24, 0.12);
+        --rule-dark: rgba(26, 26, 24, 0.25);
+        --accent: #1a1a18; /* ink-on-white CTA accent */
+        --font-d: "Playfair Display", Georgia, serif;
+        --font-b: "Figtree", system-ui, sans-serif;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+        --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--font-b);
+        background: var(--white);
+        color: var(--charcoal);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        font-family: var(--font-b);
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+
+      /* =====================================================
+   TYPOGRAPHY
+===================================================== */
+      .t-display {
+        font-family: var(--font-d);
+        font-weight: 900;
+        line-height: 0.92;
+        letter-spacing: -0.03em;
+        color: var(--ink);
+      }
+      .t-heading {
+        font-family: var(--font-d);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+      }
+      .t-label {
+        font-family: var(--font-b);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--stone);
+      }
+      .t-body {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.75;
+        color: var(--stone);
+      }
+
+      /* =====================================================
+   LAYOUT
+===================================================== */
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 48px;
+      }
+      .rule-h {
+        border: none;
+        border-top: 1px solid var(--rule);
+        margin: 0;
+      }
+      .rule-v {
+        width: 1px;
+        background: var(--rule);
+        align-self: stretch;
+      }
+
+      /* =====================================================
+   CTA BUTTON — outlined with animated fill
+===================================================== */
+      .btn-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-b);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: var(--ink);
+        border: 1px solid var(--ink);
+        padding: 14px 32px;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.35s var(--ease);
+        white-space: nowrap;
+      }
+      .btn-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--ink);
+        transform: translateY(100%);
+        transition: transform 0.35s var(--ease);
+        z-index: 0;
+      }
+      .btn-cta:hover {
+        color: var(--white);
+      }
+      .btn-cta:hover::before {
+        transform: translateY(0);
+      }
+      .btn-cta span {
+        position: relative;
+        z-index: 1;
+      }
+      .btn-cta svg {
+        position: relative;
+        z-index: 1;
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        transition: transform 0.25s var(--ease);
+      }
+      .btn-cta:hover svg {
+        transform: translateX(4px);
+      }
+
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--stone);
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule-dark);
+        transition:
+          color 0.25s,
+          border-color 0.25s,
+          gap 0.25s;
+      }
+      .btn-ghost:hover {
+        color: var(--ink);
+        border-color: var(--ink);
+        gap: 14px;
+      }
+      .btn-ghost svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+      }
+
+      /* =====================================================
+   SCROLL REVEAL
+===================================================== */
+      [data-sr] {
+        opacity: 0;
+        transition:
+          opacity 0.8s var(--ease),
+          transform 0.8s var(--ease);
+      }
+      [data-sr="up"] {
+        transform: translateY(40px);
+      }
+      [data-sr="left"] {
+        transform: translateX(-40px);
+      }
+      [data-sr="right"] {
+        transform: translateX(40px);
+      }
+      [data-sr="scale"] {
+        transform: scale(0.96);
+      }
+      [data-sr].in {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* =====================================================
+   HEADER
+===================================================== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 900;
+        background: var(--white);
+        border-bottom: 1px solid var(--rule);
+        height: 64px;
+      }
+      .header-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+      }
+      .logo-name {
+        font-family: var(--font-d);
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+      .logo-title {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--stone);
+      }
+      .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 0;
+      }
+      .nav-item {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: var(--stone);
+        padding: 6px 16px;
+        border-left: 1px solid var(--rule);
+        transition: color 0.2s;
+        white-space: nowrap;
+      }
+      .nav-item:first-child {
+        border-left: none;
+      }
+      .nav-item:hover,
+      .nav-item.active {
+        color: var(--ink);
+      }
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: 0;
+      }
+      .lang-toggle {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--rule-dark);
+        overflow: hidden;
+      }
+      .lang-btn {
+        padding: 7px 13px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: var(--stone);
+        transition: all 0.2s;
+        cursor: pointer;
+        background: none;
+        border: none;
+      }
+      .lang-btn:first-child {
+        border-right: 1px solid var(--rule-dark);
+      }
+      .lang-btn.on,
+      .lang-btn:hover {
+        background: var(--ink);
+        color: var(--white);
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        margin-left: 12px;
+      }
+      .hamburger .bar {
+        display: block;
+        width: 22px;
+        height: 1.5px;
+        background: var(--ink);
+        transition: all 0.3s var(--ease);
+        transform-origin: center;
+      }
+      .hamburger.open .bar:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+      }
+      .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      .hamburger.open .bar:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+      }
+
+      /* Mobile nav */
+      .mob-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(26, 26, 24, 0.45);
+        z-index: 910;
+        opacity: 0;
+        transition: opacity 0.35s;
+        backdrop-filter: blur(3px);
+      }
+      .mob-overlay.show {
+        opacity: 1;
+      }
+      .mob-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: min(300px, 82vw);
+        background: var(--white);
+        z-index: 920;
+        transform: translateX(100%);
+        transition: transform 0.4s var(--ease);
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid var(--rule);
+      }
+      .mob-panel.open {
+        transform: translateX(0);
+      }
+      .mob-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .mob-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--rule-dark);
+        cursor: pointer;
+        background: none;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .mob-close svg {
+        width: 16px;
+        height: 16px;
+        color: var(--charcoal);
+      }
+      .mob-close:hover {
+        background: var(--ink);
+      }
+      .mob-close:hover svg {
+        color: var(--white);
+      }
+      .mob-links {
+        padding: 8px 0;
+        flex: 1;
+        overflow-y: auto;
+      }
+      .mob-link {
+        display: block;
+        padding: 15px 24px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--charcoal);
+        border-bottom: 1px solid var(--rule);
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .mob-link:hover,
+      .mob-link.active {
+        background: var(--warm-gray);
+        color: var(--ink);
+      }
+      .mob-foot {
+        padding: 20px 24px;
+        border-top: 1px solid var(--rule);
+      }
+      .mob-lang {
+        display: flex;
+        gap: 0;
+        border: 1px solid var(--rule-dark);
+        width: fit-content;
+        overflow: hidden;
+      }
+      .mob-lang .lang-btn {
+        flex: 1;
+        text-align: center;
+        padding: 9px 16px;
+        border-right: 1px solid var(--rule-dark);
+      }
+      .mob-lang .lang-btn:last-child {
+        border-right: none;
+      }
+
+      /* =====================================================
+   SECTION 1 — HERO
+   Layout: left column text / right full-bleed image
+===================================================== */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: calc(100vh - 64px);
+        border-bottom: 1px solid var(--rule);
+      }
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 60px 60px 0;
+        border-right: 1px solid var(--rule);
+      }
+      .hero-tag {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+      .hero-tag-line {
+        width: 32px;
+        height: 1px;
+        background: var(--stone);
+      }
+      .hero-headline {
+        font-family: var(--font-d);
+        font-size: clamp(52px, 6.5vw, 88px);
+        font-weight: 900;
+        line-height: 0.88;
+        letter-spacing: -0.04em;
+        color: var(--ink);
+        margin-bottom: 36px;
+      }
+      .hero-headline em {
+        font-style: normal;
+        position: relative;
+      }
+      .hero-headline em::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: var(--ink);
+      }
+      .hero-sub {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: var(--stone);
+        max-width: 380px;
+        margin-bottom: 52px;
+      }
+      .hero-bottom {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        padding-top: 40px;
+        border-top: 1px solid var(--rule);
+      }
+      .hero-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .hero-stat-num {
+        font-family: var(--font-d);
+        font-size: 36px;
+        font-weight: 900;
+        color: var(--ink);
+        line-height: 1;
+      }
+      .hero-stat-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--stone);
+      }
+      .hero-right {
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 8s linear;
+      }
+      .hero-right:hover .hero-img {
+        transform: scale(1.03);
+      }
+      .hero-img-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px 32px;
+        background: linear-gradient(transparent, rgba(26, 26, 24, 0.6));
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      .hero-img-caption-text {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* =====================================================
+   SECTION 2 — SERVICES
+   Horizontal scrolling numbered list with grid lines
+===================================================== */
+      .services {
+        background: var(--white);
+        border-bottom: 1px solid var(--rule);
+      }
+      .services-head {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 32px;
+        padding: 48px 0 40px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .services-num-label {
+        font-family: var(--font-d);
+        font-size: 72px;
+        font-weight: 900;
+        color: var(--warm-gray);
+        line-height: 1;
+        letter-spacing: -0.05em;
+        user-select: none;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        border-top: 1px solid var(--rule);
+      }
+      .service-item {
+        padding: 40px 28px;
+        border-right: 1px solid var(--rule);
+        position: relative;
+        transition: background 0.3s;
+      }
+      .service-item:last-child {
+        border-right: none;
+      }
+      .service-item:hover {
+        background: var(--warm-gray);
+      }
+      .svc-idx {
+        font-family: var(--font-d);
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--rule-dark);
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .svc-icon {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--rule-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition:
+          background 0.3s,
+          border-color 0.3s;
+      }
+      .svc-icon svg {
+        width: 18px;
+        height: 18px;
+        color: var(--stone);
+        transition: color 0.3s;
+      }
+      .service-item:hover .svc-icon {
+        background: var(--ink);
+        border-color: var(--ink);
+      }
+      .service-item:hover .svc-icon svg {
+        color: var(--white);
+      }
+      .svc-name {
+        font-family: var(--font-d);
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      .svc-desc {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: var(--stone);
+      }
+
+      /* =====================================================
+   SECTION 3 — ABOUT
+   Big editorial layout: large image left, text right
+===================================================== */
+      .about {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        min-height: 600px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .about-img-col {
+        position: relative;
+        overflow: hidden;
+        border-right: 1px solid var(--rule);
+      }
+      .about-img-col img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s var(--ease);
+      }
+      .about-img-col:hover img {
+        transform: scale(1.04);
+      }
+      .about-sticker {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        background: var(--white);
+        padding: 16px 22px;
+        border: 1px solid var(--rule);
+      }
+      .about-sticker-yr {
+        font-family: var(--font-d);
+        font-size: 44px;
+        font-weight: 900;
+        color: var(--ink);
+        line-height: 1;
+      }
+      .about-sticker-txt {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--stone);
+        margin-top: 2px;
+      }
+      .about-text-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 72px;
+      }
+      .about-text-col .t-label {
+        margin-bottom: 16px;
+      }
+      .about-text-col .t-heading {
+        font-size: clamp(28px, 3vw, 42px);
+        margin-bottom: 24px;
+      }
+      .about-text-col .t-body {
+        margin-bottom: 16px;
+      }
+      .about-text-col .t-body + .t-body {
+        margin-top: -4px;
+      }
+      .about-creds {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid var(--rule);
+      }
+      .about-cred {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .cred-mark {
+        width: 6px;
+        height: 6px;
+        background: var(--ink);
+        flex-shrink: 0;
+      }
+      .cred-text {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--charcoal);
+      }
+
+      /* =====================================================
+   SECTION 4 — PROCESS
+   Numbered steps in alternating layout
+===================================================== */
+      .process {
+        background: var(--warm-gray);
+        border-bottom: 1px solid var(--rule);
+      }
+      .process-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 64px 0 48px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .process-head .t-heading {
+        font-size: clamp(24px, 3vw, 38px);
+      }
+      .process-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .process-step {
+        display: grid;
+        grid-template-columns: 80px 1fr 1fr;
+        gap: 0;
+        border-bottom: 1px solid var(--rule);
+        align-items: stretch;
+      }
+      .process-step:last-child {
+        border-bottom: none;
+      }
+      .step-num {
+        font-family: var(--font-d);
+        font-size: clamp(52px, 5vw, 80px);
+        font-weight: 900;
+        color: var(--rule-dark);
+        line-height: 1;
+        padding: 32px 24px 32px 0;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid var(--rule);
+        transition: color 0.3s;
+      }
+      .process-step:hover .step-num {
+        color: var(--ink);
+      }
+      .step-body {
+        padding: 32px 40px;
+        border-right: 1px solid var(--rule);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .step-body .t-heading {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .step-note {
+        padding: 32px 40px;
+        display: flex;
+        align-items: center;
+      }
+      .step-note-txt {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: var(--stone);
+      }
+
+      /* =====================================================
+   SECTION 5 — TRUST
+   Dark section with editorial stats
+===================================================== */
+      .trust {
+        background: var(--ink);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .trust-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 460px;
+      }
+      .trust-left {
+        padding: 80px 72px 80px 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .trust-left .t-label {
+        color: rgba(255, 255, 255, 0.35);
+      }
+      .trust-left .t-label::before {
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .trust-left .t-heading {
+        color: var(--white);
+        font-size: clamp(26px, 3vw, 40px);
+      }
+      .trust-reasons {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 36px;
+      }
+      .trust-reason {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .trust-reason-num {
+        font-family: var(--font-d);
+        font-size: 13px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.25);
+        min-width: 24px;
+      }
+      .trust-reason-txt {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .trust-reason-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .trust-right {
+        padding: 80px 0 80px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0;
+      }
+      .trust-stat-row {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 28px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .trust-stat-row:last-child {
+        border-bottom: none;
+      }
+      .trust-stat-big {
+        font-family: var(--font-d);
+        font-size: clamp(44px, 5vw, 68px);
+        font-weight: 900;
+        color: var(--white);
+        line-height: 1;
+        min-width: 140px;
+      }
+      .trust-stat-desc {
+        font-size: 13px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.45);
+      }
+      .trust-photo {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+        margin-top: auto;
+      }
+      .trust-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(0.3);
+      }
+
+      /* =====================================================
+   SECTION 6 — CONSULTATION CTA
+   Large typographic section
+===================================================== */
+      .cta-section {
+        background: var(--off-white);
+        border-bottom: 1px solid var(--rule);
+        overflow: hidden;
+      }
+      .cta-inner {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .cta-left {
+      }
+      .cta-super {
+        font-family: var(--font-d);
+        font-size: clamp(52px, 8vw, 120px);
+        font-weight: 900;
+        line-height: 0.85;
+        letter-spacing: -0.05em;
+        color: var(--rule);
+        user-select: none;
+        position: relative;
+      }
+      .cta-right {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      .cta-right .t-heading {
+        font-size: clamp(24px, 3vw, 36px);
+      }
+      .cta-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border: 1px solid var(--rule-dark);
+      }
+      .cta-field {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid var(--rule);
+      }
+      .cta-field:last-of-type {
+        border-bottom: none;
+      }
+      .cta-field label {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--stone);
+        padding: 14px 20px 0;
+      }
+      .cta-field input,
+      .cta-field textarea {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-family: var(--font-b);
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--ink);
+        padding: 8px 20px 14px;
+        resize: none;
+        transition: background 0.2s;
+      }
+      .cta-field input:focus,
+      .cta-field textarea:focus {
+        background: rgba(26, 26, 24, 0.03);
+      }
+      .cta-field textarea {
+        min-height: 80px;
+      }
+      .form-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 20px;
+        border-top: 1px solid var(--rule);
+        background: var(--white);
+      }
+      .form-note {
+        font-size: 11px;
+        color: var(--stone);
+      }
+      input[type="submit"] {
+        cursor: pointer;
+      }
+
+      /* =====================================================
+   SECTION 7 — CONTACT
+===================================================== */
+      .contact {
+        background: var(--white);
+        border-bottom: 1px solid var(--rule);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-top: 1px solid var(--rule);
+      }
+      .contact-col {
+        padding: 56px 40px;
+        border-right: 1px solid var(--rule);
+      }
+      .contact-col:last-child {
+        border-right: none;
+      }
+      .contact-col .t-label {
+        margin-bottom: 20px;
+      }
+      .contact-val {
+        font-family: var(--font-d);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.3;
+        margin-bottom: 8px;
+      }
+      .contact-note {
+        font-size: 13px;
+        color: var(--stone);
+        line-height: 1.6;
+      }
+      .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--stone);
+        padding-bottom: 2px;
+        border-bottom: 1px solid var(--rule-dark);
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+        margin-top: 12px;
+      }
+      .contact-link:hover {
+        color: var(--ink);
+        border-color: var(--ink);
+      }
+      .contact-link svg {
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+      }
+      .hours-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .hours-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+        color: var(--stone);
+      }
+      .hours-row:last-child {
+        border-bottom: none;
+      }
+      .hours-day {
+        font-weight: 500;
+        color: var(--charcoal);
+      }
+
+      /* =====================================================
+   FOOTER
+===================================================== */
+      .site-footer {
+        background: var(--ink);
+        padding: 48px 0;
+      }
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .footer-logo {
+        font-family: var(--font-d);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--white);
+      }
+      .footer-links {
+        display: flex;
+        gap: 0;
+      }
+      .footer-link {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.35);
+        padding: 6px 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        transition: color 0.2s;
+      }
+      .footer-link:first-child {
+        padding-left: 0;
+      }
+      .footer-link:last-child {
+        border-right: none;
+      }
+      .footer-link:hover {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .footer-copy {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.25);
+      }
+
+      /* =====================================================
+   RESPONSIVE
+===================================================== */
+      @media (max-width: 1080px) {
+        .wrap {
+          padding: 0 32px;
+        }
+        .hero-left {
+          padding: 56px 44px 52px 0;
+        }
+        .services-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .service-item:nth-child(3) {
+          border-right: none;
+        }
+        .service-item:nth-child(n + 4) {
+          border-top: 1px solid var(--rule);
+        }
+        .about {
+          grid-template-columns: 1fr 1fr;
+        }
+        .about-text-col {
+          padding: 64px 48px;
+        }
+        .trust-left {
+          padding: 64px 48px 64px 0;
+        }
+        .trust-right {
+          padding: 64px 0 64px 48px;
+        }
+        .trust-stat-big {
+          font-size: clamp(36px, 4vw, 56px);
+          min-width: 110px;
+        }
+        .process-step {
+          grid-template-columns: 60px 1fr 1fr;
+        }
+      }
+      @media (max-width: 800px) {
+        .main-nav {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+        }
+        .hero-left {
+          padding: 48px 0;
+          border-right: none;
+          border-bottom: 1px solid var(--rule);
+        }
+        .hero-right {
+          height: 50vw;
+          min-height: 260px;
+        }
+        .services-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .service-item:nth-child(2) {
+          border-right: none;
+        }
+        .service-item:nth-child(3) {
+          border-right: 1px solid var(--rule);
+          border-top: 1px solid var(--rule);
+        }
+        .service-item:nth-child(4) {
+          border-right: none;
+          border-top: 1px solid var(--rule);
+        }
+        .service-item:nth-child(5) {
+          border-top: 1px solid var(--rule);
+        }
+        .service-item:nth-child(6) {
+          border-top: 1px solid var(--rule);
+          border-right: none;
+        }
+        .about {
+          grid-template-columns: 1fr;
+        }
+        .about-img-col {
+          height: 60vw;
+          border-right: none;
+          border-bottom: 1px solid var(--rule);
+        }
+        .about-text-col {
+          padding: 48px 0;
+        }
+        .process-step {
+          grid-template-columns: 50px 1fr;
+        }
+        .step-note {
+          display: none;
+        }
+        .trust-inner {
+          grid-template-columns: 1fr;
+        }
+        .trust-left {
+          padding: 64px 0 48px;
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .trust-right {
+          padding: 48px 0 64px;
+        }
+        .cta-inner {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 72px 0;
+        }
+        .cta-super {
+          font-size: clamp(52px, 15vw, 88px);
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .contact-col {
+          border-right: none;
+          border-bottom: 1px solid var(--rule);
+          padding: 40px 0;
+        }
+        .contact-col:last-child {
+          border-bottom: none;
+        }
+      }
+      @media (max-width: 540px) {
+        .wrap {
+          padding: 0 20px;
+        }
+        .hero-headline {
+          font-size: clamp(40px, 12vw, 64px);
+        }
+        .hero-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+        }
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+        .service-item {
+          border-right: none !important;
+          border-top: 1px solid var(--rule);
+        }
+        .service-item:first-child {
+          border-top: none;
+        }
+        .services-head {
+          grid-template-columns: auto 1fr;
+        }
+        .services-head .btn-ghost {
+          display: none;
+        }
+        .footer-inner {
+          flex-direction: column;
+          gap: 20px;
+          align-items: flex-start;
+        }
+        .footer-links {
+          flex-wrap: wrap;
+        }
+        .form-foot {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =====================================================
+     HEADER
+===================================================== -->
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-name">Лисенко</span>
+          <span class="logo-title">Приватний нотаріус · Київ</span>
+        </a>
+        <nav class="main-nav" aria-label="Головна навігація">
+          <a href="#services" class="nav-item">Послуги</a>
+          <a href="#about" class="nav-item">Про нас</a>
+          <a href="#process" class="nav-item">Процес</a>
+          <a href="#cta" class="nav-item">Консультація</a>
+          <a href="#contact" class="nav-item">Контакти</a>
+        </nav>
+        <div class="header-right">
+          <div class="lang-toggle">
+            <button
+              class="lang-btn on"
+              onclick="location.href = 'notary-ua.html'"
+            >
+              UA
+            </button>
+            <button class="lang-btn" onclick="location.href = 'notary-en.html'">
+              EN
+            </button>
+          </div>
+
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+          >
+            <span class="bar"></span><span class="bar"></span
+            ><span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <div class="mob-overlay" id="mobOverlay"></div>
+    <nav class="mob-panel" id="mobPanel" aria-label="Мобільне меню">
+      <div class="mob-head">
+        <span
+          class="logo-name"
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            color: var(--ink);
+          "
+          >Лисенко</span
+        >
+        <button class="mob-close" id="mobClose" aria-label="Закрити меню">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="mob-links">
+        <a href="#services" class="mob-link">Послуги</a>
+        <a href="#about" class="mob-link">Про нас</a>
+        <a href="#process" class="mob-link">Процес</a>
+        <a href="#trust" class="mob-link">Чому ми</a>
+        <a href="#cta" class="mob-link">Консультація</a>
+        <a href="#contact" class="mob-link">Контакти</a>
+      </div>
+      <div class="mob-foot">
+        <div class="mob-lang">
+          <button class="lang-btn on" onclick="location.href = 'index.html'">
+            Українська
+          </button>
+          <button class="lang-btn" onclick="location.href = 'en.html'">
+            English
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- =====================================================
+     § 1 — HERO
+===================================================== -->
+      <section class="hero">
+        <div class="hero-left wrap" style="padding-right: 60px">
+          <div>
+            <div class="hero-tag" data-sr="up">
+              <div class="hero-tag-line"></div>
+              <span class="t-label">Нотаріальна контора · Київ</span>
+            </div>
+            <h1 class="hero-headline" data-sr="up" data-delay="80">
+              Надійно.<br /><em>Законно.</em><br />Вчасно.
+            </h1>
+            <p class="hero-sub" data-sr="up" data-delay="160">
+              Приватний нотаріус Олена Лисенко — понад 15 років посвідчую
+              документи, оформлюю нерухомість та супроводжую угоди по всій
+              Україні.
+            </p>
+            <div data-sr="up" data-delay="240">
+              <a href="#cta" class="btn-cta">
+                <span>Записатися на консультацію</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-bottom" data-sr="up" data-delay="320">
+            <div class="hero-stat">
+              <div class="hero-stat-num">15+</div>
+              <div class="hero-stat-label">Років досвіду</div>
+            </div>
+            <div class="rule-v" style="height: 44px"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">3 000+</div>
+              <div class="hero-stat-label">Клієнтів</div>
+            </div>
+            <div class="rule-v" style="height: 44px"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Законність</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img
+            class="hero-img"
+            src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGF3eWVyfGVufDB8fDB8fHww"
+            alt="Нотаріальна печатка та договірний документ"
+            loading="eager"
+          />
+          <div class="hero-img-caption">
+            <span class="hero-img-caption-text">Приватний нотаріус</span>
+            <span class="hero-img-caption-text">Київ, Україна</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 2 — SERVICES
+===================================================== -->
+      <section class="services" id="services">
+        <div class="wrap">
+          <div class="services-head">
+            <div class="services-num-label" aria-hidden="true">02</div>
+            <div data-sr="up">
+              <span class="t-label" style="display: block; margin-bottom: 8px"
+                >Послуги</span
+              >
+              <h2 class="t-heading" style="font-size: clamp(24px, 3vw, 36px)">
+                Що ми пропонуємо
+              </h2>
+            </div>
+            <a href="#cta" class="btn-ghost" data-sr="right">
+              Записатися
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="wrap"
+          style="
+            padding-left: 0;
+            padding-right: 0;
+            max-width: 100%;
+            border-left: 48px solid transparent;
+            border-right: 48px solid transparent;
+          "
+          class="services-wrap"
+        >
+          <!-- re-use wrap but full-width the grid -->
+        </div>
+        <div style="border-top: 1px solid var(--rule)">
+          <div class="wrap" style="padding: 0">
+            <div class="services-grid">
+              <div class="service-item" data-sr="up" data-delay="0">
+                <span class="svc-idx">01</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                  </svg>
+                </div>
+                <div class="svc-name">Посвідчення документів</div>
+                <p class="svc-desc">
+                  Підписи, копії, переклади та будь-які цивільно-правові
+                  документи.
+                </p>
+              </div>
+              <div class="service-item" data-sr="up" data-delay="60">
+                <span class="svc-idx">02</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path
+                      d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                    />
+                  </svg>
+                </div>
+                <div class="svc-name">Довіреності</div>
+                <p class="svc-desc">
+                  Генеральні та спеціальні довіреності для України та закордону.
+                </p>
+              </div>
+              <div class="service-item" data-sr="up" data-delay="120">
+                <span class="svc-idx">03</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <div class="svc-name">Нерухомість</div>
+                <p class="svc-desc">
+                  Купівля, продаж, дарування, спадщина — нотаріально та прозоро.
+                </p>
+              </div>
+              <div class="service-item" data-sr="up" data-delay="180">
+                <span class="svc-idx">04</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <rect x="2" y="7" width="20" height="14" rx="0" ry="0" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="svc-name">Реєстрація бізнесу</div>
+                <p class="svc-desc">
+                  Статути, установчі договори, ТОВ та ФОП — вся необхідна
+                  документація.
+                </p>
+              </div>
+              <div class="service-item" data-sr="up" data-delay="240">
+                <span class="svc-idx">05</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </div>
+                <div class="svc-name">Договори та угоди</div>
+                <p class="svc-desc">
+                  Шлюбні контракти, позика, оренда — будь-які цивільні угоди.
+                </p>
+              </div>
+              <div class="service-item" data-sr="up" data-delay="300">
+                <span class="svc-idx">06</span>
+                <div class="svc-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                </div>
+                <div class="svc-name">Апостиль та легалізація</div>
+                <p class="svc-desc">
+                  Документи для використання за кордоном. Апостиль Мін'юсту.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 3 — ABOUT
+===================================================== -->
+      <section class="about" id="about">
+        <div class="about-img-col">
+          <img
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=900&q=85"
+            alt="Нотаріус Олена Лисенко"
+            loading="lazy"
+          />
+          <div class="about-sticker">
+            <div class="about-sticker-yr">2009</div>
+            <div class="about-sticker-txt">Рік заснування</div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <span class="t-label" data-sr="up">Про нотаріуса</span>
+          <h2 class="t-heading" data-sr="up" data-delay="80">
+            Олена Лисенко — нотаріус Київського нотаріального округу
+          </h2>
+          <p class="t-body" data-sr="up" data-delay="160">
+            Понад 15 років я допомагаю клієнтам вирішувати складні юридичні
+            питання — чітко, надійно й конфіденційно. Кожен документ отримує мою
+            особисту увагу.
+          </p>
+          <p class="t-body" data-sr="up" data-delay="200">
+            Спеціалізуюсь на угодах з нерухомістю, корпоративному праві та
+            міжнародних документах. Постійно підвищую кваліфікацію та слідкую за
+            змінами в законодавстві.
+          </p>
+          <div class="about-creds" data-sr="up" data-delay="280">
+            <div class="about-cred">
+              <div class="cred-mark"></div>
+              <span class="cred-text"
+                >Київський національний університет ім. Тараса Шевченка, магістр
+                права</span
+              >
+            </div>
+            <div class="about-cred">
+              <div class="cred-mark"></div>
+              <span class="cred-text"
+                >Ліцензія Міністерства юстиції України, реєстр №4721</span
+              >
+            </div>
+            <div class="about-cred">
+              <div class="cred-mark"></div>
+              <span class="cred-text">Член Нотаріальної палати України</span>
+            </div>
+            <div class="about-cred">
+              <div class="cred-mark"></div>
+              <span class="cred-text"
+                >Сертифікований спеціаліст з нерухомості та спадкового
+                права</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 4 — PROCESS
+===================================================== -->
+      <section class="process" id="process">
+        <div class="wrap">
+          <div class="process-head">
+            <div data-sr="up">
+              <span class="t-label" style="display: block; margin-bottom: 8px"
+                >Як це працює</span
+              >
+              <h2 class="t-heading">Чотири кроки до результату</h2>
+            </div>
+            <a href="#cta" class="btn-ghost" data-sr="right">Розпочати →</a>
+          </div>
+          <div class="process-steps">
+            <div class="process-step" data-sr="up" data-delay="0">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h3 class="t-heading" style="font-size: 20px">
+                  Запис на прийом
+                </h3>
+                <p class="t-body" style="font-size: 13px">
+                  Зателефонуйте, напишіть або заповніть форму онлайн — оберіть
+                  зручний час.
+                </p>
+              </div>
+              <div class="step-note">
+                <p class="step-note-txt">
+                  Відповідаємо протягом 2 годин у робочий час. Першу
+                  консультацію можна провести онлайн або телефоном.
+                </p>
+              </div>
+            </div>
+            <div class="process-step" data-sr="up" data-delay="80">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h3 class="t-heading" style="font-size: 20px">Консультація</h3>
+                <p class="t-body" style="font-size: 13px">
+                  Аналізуємо вашу ситуацію, пояснюємо порядок дій і перелік
+                  необхідних документів.
+                </p>
+              </div>
+              <div class="step-note">
+                <p class="step-note-txt">
+                  Ви отримаєте чіткий перелік документів і орієнтовну вартість
+                  послуг до початку роботи.
+                </p>
+              </div>
+            </div>
+            <div class="process-step" data-sr="up" data-delay="160">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h3 class="t-heading" style="font-size: 20px">
+                  Підготовка та перевірка
+                </h3>
+                <p class="t-body" style="font-size: 13px">
+                  Готуємо, перевіряємо і погоджуємо документи відповідно до
+                  вимог законодавства.
+                </p>
+              </div>
+              <div class="step-note">
+                <p class="step-note-txt">
+                  Більшість документів готуються в день звернення. Термінові
+                  замовлення — за домовленістю.
+                </p>
+              </div>
+            </div>
+            <div class="process-step" data-sr="up" data-delay="240">
+              <div class="step-num">4</div>
+              <div class="step-body">
+                <h3 class="t-heading" style="font-size: 20px">
+                  Посвідчення та видача
+                </h3>
+                <p class="t-body" style="font-size: 13px">
+                  Підписуємо, посвідчуємо нотаріально та передаємо вам документи
+                  з рекомендаціями.
+                </p>
+              </div>
+              <div class="step-note">
+                <p class="step-note-txt">
+                  Ви отримуєте готовий документ із нотаріальним посвідченням і
+                  записом у реєстрі.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 5 — TRUST
+===================================================== -->
+      <section class="trust" id="trust">
+        <div class="wrap">
+          <div class="trust-inner">
+            <div class="trust-left">
+              <div>
+                <span
+                  class="t-label"
+                  style="
+                    color: rgba(255, 255, 255, 0.35);
+                    display: block;
+                    margin-bottom: 14px;
+                  "
+                  >Чому клієнти обирають нас</span
+                >
+                <h2
+                  class="t-heading"
+                  style="color: var(--white); font-size: clamp(26px, 3vw, 40px)"
+                  data-sr="up"
+                >
+                  Довіра — не слова. Це результат.
+                </h2>
+              </div>
+              <div class="trust-reasons" data-sr="up" data-delay="120">
+                <div class="trust-reason">
+                  <span class="trust-reason-num">01</span>
+                  <div>
+                    <span class="trust-reason-title"
+                      >Офіційна ліцензія Мін'юсту</span
+                    >
+                    <span class="trust-reason-txt"
+                      >Повністю ліцензована контора, внесена до Державного
+                      реєстру нотаріусів України.</span
+                    >
+                  </div>
+                </div>
+                <div class="trust-reason">
+                  <span class="trust-reason-num">02</span>
+                  <div>
+                    <span class="trust-reason-title"
+                      >Прозоре ціноутворення</span
+                    >
+                    <span class="trust-reason-txt"
+                      >Фіксовані тарифи без прихованих платежів. Вартість
+                      озвучується до початку роботи.</span
+                    >
+                  </div>
+                </div>
+                <div class="trust-reason">
+                  <span class="trust-reason-num">03</span>
+                  <div>
+                    <span class="trust-reason-title"
+                      >Суворо дотримуємось строків</span
+                    >
+                    <span class="trust-reason-txt"
+                      >Більшість документів — готові в день звернення.</span
+                    >
+                  </div>
+                </div>
+                <div class="trust-reason">
+                  <span class="trust-reason-num">04</span>
+                  <div>
+                    <span class="trust-reason-title">Нотаріальна таємниця</span>
+                    <span class="trust-reason-txt"
+                      >Абсолютна конфіденційність усіх відомостей — це наш
+                      обов'язок і цінність.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trust-right" data-sr="right">
+              <div class="trust-stat-row">
+                <div class="trust-stat-big">15+</div>
+                <div class="trust-stat-desc">
+                  Років у нотаріальній практиці по Київському округу
+                </div>
+              </div>
+              <div class="trust-stat-row">
+                <div class="trust-stat-big">3K+</div>
+                <div class="trust-stat-desc">
+                  Клієнтів, яким ми допомогли вирішити юридичні питання
+                </div>
+              </div>
+              <div class="trust-stat-row">
+                <div class="trust-stat-big">6</div>
+                <div class="trust-stat-desc">
+                  Ключових видів нотаріальних послуг в одному місці
+                </div>
+              </div>
+              <div class="trust-photo" style="margin-top: 36px">
+                <img
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGF3eWVyfGVufDB8fDB8fHww"
+                  alt="Нотаріальна консультація"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 6 — CONSULTATION CTA
+===================================================== -->
+      <section class="cta-section" id="cta">
+        <div class="wrap">
+          <div class="cta-inner">
+            <div class="cta-left" data-sr="left">
+              <div class="cta-super" aria-hidden="true">
+                КОН-<br />СУЛЬ-<br />ТА-<br />ЦІЯ
+              </div>
+            </div>
+            <div class="cta-right">
+              <div data-sr="up">
+                <span
+                  class="t-label"
+                  style="display: block; margin-bottom: 12px"
+                  >Запишіться зараз</span
+                >
+                <h2 class="t-heading" style="font-size: clamp(24px, 3vw, 36px)">
+                  Отримайте консультацію нотаріуса сьогодні
+                </h2>
+              </div>
+              <p class="t-body" data-sr="up" data-delay="80">
+                Залиште свої дані — ми зв'яжемося протягом 2 годин і узгодимо
+                зручний час.
+              </p>
+              <form
+                class="cta-form"
+                id="contactForm"
+                data-sr="up"
+                data-delay="160"
+                novalidate
+              >
+                <div class="cta-field">
+                  <label for="name">Ваше ім'я</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Іван Петренко"
+                    required
+                  />
+                </div>
+                <div class="cta-field">
+                  <label for="phone">Телефон</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+380 00 000 00 00"
+                    required
+                  />
+                </div>
+                <div class="cta-field">
+                  <label for="service">Послуга</label>
+                  <input
+                    type="text"
+                    id="service"
+                    name="service"
+                    placeholder="Наприклад: довіреність, нерухомість…"
+                  />
+                </div>
+                <div class="cta-field">
+                  <label for="message">Коментар (необов'язково)</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Коротко опишіть вашу ситуацію…"
+                  ></textarea>
+                </div>
+                <div class="form-foot">
+                  <span class="form-note"
+                    >Відповімо протягом 2 годин у робочий час</span
+                  >
+                  <button
+                    type="submit"
+                    class="btn-cta"
+                    data-sending="Надсилаємо…"
+                    data-sent="Надіслано ✓"
+                  >
+                    <span>Заповити консультацію</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     § 7 — CONTACT
+===================================================== -->
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <div
+            style="
+              padding: 56px 0 36px;
+              border-bottom: 1px solid var(--rule);
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+              gap: 24px;
+              flex-wrap: wrap;
+            "
+          >
+            <div data-sr="up">
+              <span class="t-label" style="display: block; margin-bottom: 8px"
+                >Контакти</span
+              >
+              <h2 class="t-heading" style="font-size: clamp(24px, 3vw, 36px)">
+                Знайдіть нас
+              </h2>
+            </div>
+            <a
+              href="tel:+380440000000"
+              class="btn-cta"
+              data-sr="right"
+              style="margin-bottom: 4px"
+            >
+              <span>+380 44 000 00 00</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-col" data-sr="up" data-delay="0">
+              <span class="t-label">Адреса</span>
+              <div class="contact-val">
+                вул. Хрещатик, 26<br />офіс 401, Київ
+              </div>
+              <p class="contact-note">
+                Станція метро «Хрещатик» — 3 хвилини пішки.
+              </p>
+              <a href="#" class="contact-link">
+                Відкрити на карті
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+            <div class="contact-col" data-sr="up" data-delay="80">
+              <span class="t-label">Зв'язок</span>
+              <div class="contact-val">+380 44 000 00 00</div>
+              <p class="contact-note">office@lysenko-notary.ua</p>
+              <a href="mailto:office@lysenko-notary.ua" class="contact-link">
+                Написати email
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+            <div class="contact-col" data-sr="up" data-delay="160">
+              <span class="t-label">Графік роботи</span>
+              <div class="hours-list">
+                <div class="hours-row">
+                  <span class="hours-day">Понеділок – П'ятниця</span
+                  ><span>09:00 – 18:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Субота</span
+                  ><span>10:00 – 14:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Неділя</span><span>Вихідний</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Map placeholder -->
+          <div
+            style="
+              height: 260px;
+              background: var(--warm-gray);
+              border-top: 1px solid var(--rule);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 12px;
+              color: var(--stone);
+            "
+            data-sr="scale"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              opacity=".4"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span style="font-size: 13px; font-weight: 500"
+              >вул. Хрещатик, 26 · Київ, Україна</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-logo">Лисенко Нотаріус</div>
+        <div class="footer-links">
+          <a href="#services" class="footer-link">Послуги</a>
+          <a href="#about" class="footer-link">Про нас</a>
+          <a href="#process" class="footer-link">Процес</a>
+          <a href="#contact" class="footer-link">Контакти</a>
+        </div>
+        <div class="footer-copy">
+          © 2025 Нотаріус Лисенко. Усі права захищено.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+
+        /* -- Sticky header shadow -- */
+        const hdr = document.querySelector(".site-header");
+        window.addEventListener(
+          "scroll",
+          () => {
+            hdr.style.boxShadow =
+              window.scrollY > 8 ? "0 1px 20px rgba(26,26,24,.08)" : "none";
+          },
+          { passive: true },
+        );
+
+        /* -- Mobile hamburger -- */
+        const ham = document.getElementById("hamburger");
+        const panel = document.getElementById("mobPanel");
+        const overlay = document.getElementById("mobOverlay");
+        const close = document.getElementById("mobClose");
+        function openMenu() {
+          ham.classList.add("open");
+          ham.setAttribute("aria-expanded", "true");
+          panel.classList.add("open");
+          overlay.style.display = "block";
+          requestAnimationFrame(() => overlay.classList.add("show"));
+          document.body.style.overflow = "hidden";
+        }
+        function closeMenu() {
+          ham.classList.remove("open");
+          ham.setAttribute("aria-expanded", "false");
+          panel.classList.remove("open");
+          overlay.classList.remove("show");
+          document.body.style.overflow = "";
+          setTimeout(() => {
+            overlay.style.display = "none";
+          }, 350);
+        }
+        ham && ham.addEventListener("click", openMenu);
+        close && close.addEventListener("click", closeMenu);
+        overlay && overlay.addEventListener("click", closeMenu);
+        document
+          .querySelectorAll(".mob-link")
+          .forEach((l) => l.addEventListener("click", closeMenu));
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMenu();
+        });
+
+        /* -- Scroll reveal -- */
+        const els = document.querySelectorAll("[data-sr]");
+        if ("IntersectionObserver" in window) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  const d = +(e.target.dataset.delay || 0);
+                  setTimeout(() => e.target.classList.add("in"), d);
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+          );
+          els.forEach((el) => io.observe(el));
+        } else {
+          els.forEach((el) => el.classList.add("in"));
+        }
+
+        /* -- Contact form -- */
+        const form = document.getElementById("contactForm");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const btn = this.querySelector("[type=submit]");
+            const orig = btn.querySelector("span").textContent;
+            btn.querySelector("span").textContent =
+              btn.dataset.sending || "Sending…";
+            btn.disabled = true;
+            setTimeout(() => {
+              btn.querySelector("span").textContent =
+                btn.dataset.sent || "Sent ✓";
+              btn.style.background = "#2A6E4A";
+              btn.style.borderColor = "#2A6E4A";
+              btn.style.color = "#fff";
+              setTimeout(() => {
+                btn.querySelector("span").textContent = orig;
+                btn.disabled = false;
+                btn.style.background = "";
+                btn.style.borderColor = "";
+                btn.style.color = "";
+                form.reset();
+              }, 4000);
+            }, 1400);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
