@@ -562,7 +562,7 @@ button {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 32px;
-  padding: 48px 0 40px;
+  padding: 84px 0 40px;
   border-bottom: 1px solid var(--rule);
 }
 .services-num-label {
@@ -739,12 +739,13 @@ button {
 .process {
   background: var(--warm-gray);
   border-bottom: 1px solid var(--rule);
+  padding-top: 84px;
 }
 .process-head {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 64px 0 48px;
+  padding: 84pxІ 0 48px;
   border-bottom: 1px solid var(--rule);
 }
 .process-head .t-heading {
@@ -1011,6 +1012,17 @@ input[type="submit"] {
   background: var(--white);
   border-bottom: 1px solid var(--rule);
 }
+
+.contact-head {
+  padding: 84px 0 40px;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1154,13 +1166,13 @@ input[type="submit"] {
     grid-template-columns: 1fr 1fr;
   }
   .about-text-col {
-    padding: 64px 48px;
+    padding: 84px 48px;
   }
   .trust-left {
-    padding: 64px 48px 64px 0;
+    padding: 84px 48px 84px 0;
   }
   .trust-right {
-    padding: 64px 0 64px 48px;
+    padding: 84px 0 84px 48px;
   }
   .trust-stat-big {
     font-size: clamp(36px, 4vw, 56px);
@@ -1233,7 +1245,7 @@ input[type="submit"] {
     grid-template-columns: 1fr;
   }
   .trust-left {
-    padding: 64px 0 48px;
+    padding: 84px 0 48px;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
