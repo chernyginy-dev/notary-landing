@@ -32,17 +32,12 @@
           <a href="#services" class="nav-item">Послуги</a>
           <a href="#about" class="nav-item">Про нас</a>
           <a href="#process" class="nav-item">Процес</a>
-          <a href="#cta" class="nav-item">Консультація</a>
           <a href="#contact" class="nav-item">Контакти</a>
         </nav>
         <div class="header-right">
           <div class="lang-toggle">
-            <button class="lang-btn on" onclick="location.href = 'index.html'">
-              UA
-            </button>
-            <button class="lang-btn" onclick="location.href = 'index-en.html'">
-              EN
-            </button>
+            <button class="lang-btn on" data-lang="uk">UA</button>
+            <button class="lang-btn" data-lang="en">EN</button>
           </div>
 
           <button
@@ -87,17 +82,12 @@
         <a href="#about" class="mob-link">Про нас</a>
         <a href="#process" class="mob-link">Процес</a>
         <a href="#trust" class="mob-link">Чому ми</a>
-        <a href="#cta" class="mob-link">Консультація</a>
         <a href="#contact" class="mob-link">Контакти</a>
       </div>
       <div class="mob-foot">
         <div class="mob-lang">
-          <button class="lang-btn on" onclick="location.href = 'index.html'">
-            UA
-          </button>
-          <button class="lang-btn" onclick="location.href = 'index-en.html'">
-            EN
-          </button>
+          <button class="lang-btn on" data-lang="uk">UA</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
       </div>
     </nav>
@@ -126,7 +116,7 @@
                 до законодавства України.
               </p>
               <div data-sr="up" data-delay="240">
-                <a href="#cta" class="btn-cta">
+                <a href="#contact" class="btn-cta">
                   <span>Записатися на консультацію</span>
                   <svg
                     viewBox="0 0 24 24"
@@ -187,7 +177,7 @@
                 Що ми пропонуємо
               </h2>
             </div>
-            <a href="#cta" class="btn-ghost" data-sr="right">
+            <a href="#contact" class="btn-ghost" data-sr="right">
               Записатися
               <svg
                 viewBox="0 0 24 24"
@@ -423,7 +413,7 @@
             <div class="about__certificate-body">
               <div class="about__certificate-img-wrap">
                 <img
-                  src="/assets/img/certificate-notary.jpg"
+                  src="assets/img/certificate-notary.png"
                   alt="Свідоцтво нотаріуса Харків Римарська 19"
                   loading="lazy"
                   onerror="
@@ -477,7 +467,7 @@
               >
               <h2 class="t-heading">Чотири кроки до результату</h2>
             </div>
-            <a href="#cta" class="btn-ghost" data-sr="right">Розпочати →</a>
+            <a href="#contact" class="btn-ghost" data-sr="right">Розпочати →</a>
           </div>
           <div class="process-steps">
             <div class="process-step" data-sr="up" data-delay="0">
@@ -669,7 +659,7 @@
                 Відгуки клієнтів
               </h2>
             </div>
-            <a href="#cta" class="btn-ghost" data-sr="right">
+            <a href="#contact" class="btn-ghost" data-sr="right">
               Записатися
               <svg
                 viewBox="0 0 24 24"
@@ -871,203 +861,13 @@
       </section>
 
       <!-- =====================================================
-     § 5.7 — CTA BANNER (urgent action strip)
-===================================================== -->
-      <section
-        class="cta-banner"
-        id="cta-banner"
-        aria-label="Швидка консультація"
-      >
-        <div class="wrap">
-          <div class="cta-banner__inner">
-            <div class="cta-banner__left" data-sr="left">
-              <div class="cta-banner__tag">
-                <div class="cta-banner__tag-line" aria-hidden="true"></div>
-                <span class="t-label" style="color: rgba(255, 255, 255, 0.45)"
-                  >Нотаріус Харків · Центр</span
-                >
-              </div>
-              <h2 class="cta-banner__title">
-                Потрібна<br />консультація<br /><em>нотаріуса?</em>
-              </h2>
-              <p class="cta-banner__sub">
-                Відповідаємо протягом 2 годин у робочий час.<br />
-                Приватний нотаріус у центрі Харкова — вул. Римарська, 19.
-              </p>
-            </div>
-
-            <div class="cta-banner__right" data-sr="right">
-              <div class="cta-banner__actions">
-                <a
-                  href="tel:+380440000000"
-                  class="cta-banner__btn cta-banner__btn--primary"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    />
-                  </svg>
-                  <span>+380 44 000 00 00</span>
-                </a>
-                <a href="#cta" class="cta-banner__btn cta-banner__btn--ghost">
-                  <span>Заповнити форму</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    aria-hidden="true"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </a>
-              </div>
-              <div class="cta-banner__trust">
-                <div class="cta-banner__trust-item">
-                  <div class="cta-banner__trust-num">30+</div>
-                  <div class="cta-banner__trust-label">років досвіду</div>
-                </div>
-                <div class="cta-banner__trust-divider" aria-hidden="true"></div>
-                <div class="cta-banner__trust-item">
-                  <div class="cta-banner__trust-num">Пн–Пт</div>
-                  <div class="cta-banner__trust-label">09:00 – 18:00</div>
-                </div>
-                <div class="cta-banner__trust-divider" aria-hidden="true"></div>
-                <div class="cta-banner__trust-item">
-                  <div class="cta-banner__trust-num">100%</div>
-                  <div class="cta-banner__trust-label">законність</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-     § 6 — CONSULTATION CTA
-===================================================== -->
-      <section class="cta-section" id="cta">
-        <div class="wrap">
-          <div class="cta-inner">
-            <div class="cta-left" data-sr="left">
-              <div class="cta-super desktop-visible" aria-hidden="true">
-                КОН-<br />СУЛЬ-<br />ТА-<br />ЦІЯ
-              </div>
-
-              <div class="cta-super mobile-visible" aria-hidden="true">
-                КОНСУЛЬ-<br />ТАЦІЯ
-              </div>
-            </div>
-            <div class="cta-right">
-              <div data-sr="up">
-                <span
-                  class="t-label"
-                  style="display: block; margin-bottom: 12px"
-                  >Запишіться зараз</span
-                >
-                <h2 class="t-heading" style="font-size: clamp(24px, 3vw, 36px)">
-                  Отримайте консультацію нотаріуса сьогодні
-                </h2>
-              </div>
-              <p class="t-body" data-sr="up" data-delay="80">
-                Залиште свої дані — ми зв'яжемося протягом 2 годин і узгодимо
-                зручний час.
-              </p>
-              <form
-                class="cta-form"
-                id="contactForm"
-                data-sr="up"
-                data-delay="160"
-                action="https://formspree.io/f/xqeyryrk"
-                method="POST"
-                novalidate
-              >
-                <div class="cta-field">
-                  <label for="name">Ваше ім'я</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Іван Петренко"
-                    required
-                  />
-                </div>
-                <div class="cta-field">
-                  <label for="email">Email (необов'язково)</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div class="cta-field">
-                  <label for="phone">Телефон</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+380 00 000 00 00"
-                    required
-                  />
-                </div>
-                <div class="cta-field">
-                  <label for="service">Послуга</label>
-                  <input
-                    type="text"
-                    id="service"
-                    name="service"
-                    placeholder="Наприклад: довіреність, нерухомість…"
-                  />
-                </div>
-                <div class="cta-field">
-                  <label for="message">Коментар (необов'язково)</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Коротко опишіть вашу ситуацію…"
-                  ></textarea>
-                </div>
-                <div class="form-foot">
-                  <span class="form-note"
-                    >Відповімо протягом 2 годин у робочий час</span
-                  >
-                  <button
-                    type="submit"
-                    class="btn-cta"
-                    data-sending="Надсилаємо…"
-                    data-sent="Надіслано ✓"
-                  >
-                    <span>Консультація</span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                      <polyline points="12 5 19 12 12 19" />
-                    </svg>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-     § 7 — CONTACT
+     § 6 — CONTACT / ЗНАЙДІТЬ НАС
+     (об'єднано: CTA + Address + Get in Touch + Opening Hours; форму видалено)
 ===================================================== -->
       <section class="contact" id="contact">
         <div class="wrap">
+
+          <!-- Head row: label + H2 + phone CTA -->
           <div class="contact-head">
             <div data-sr="up">
               <span class="t-label" style="display: block; margin-bottom: 8px"
@@ -1096,14 +896,23 @@
               </svg>
             </a>
           </div>
+
+          <!-- Info grid: 3 columns -->
           <div class="contact-grid">
+
+            <!-- Col 1 — Address -->
             <div class="contact-col" data-sr="up" data-delay="0">
               <span class="t-label">Адреса</span>
-              <div class="contact-val">вул. Римарська, 19, Харків<br /></div>
+              <div class="contact-val">вул. Римарська, 19, Харків</div>
               <p class="contact-note">
-                центр Харкова, станція метро "Університет" — 5 хвилин пішки
+                центр Харкова, станція метро «Університет» — 5 хвилин пішки
               </p>
-              <a href="#" class="contact-link">
+              <a
+                href="https://maps.google.com/?q=вул.+Римарська,+19,+Харків"
+                class="contact-link"
+                target="_blank"
+                rel="noopener"
+              >
                 Відкрити на карті
                 <svg
                   viewBox="0 0 24 24"
@@ -1116,6 +925,8 @@
                 </svg>
               </a>
             </div>
+
+            <!-- Col 2 — Get in Touch -->
             <div class="contact-col" data-sr="up" data-delay="80">
               <span class="t-label">Зв'язок</span>
               <div class="contact-val">+380 44 000 00 00</div>
@@ -1133,6 +944,8 @@
                 </svg>
               </a>
             </div>
+
+            <!-- Col 3 — Opening Hours -->
             <div class="contact-col" data-sr="up" data-delay="160">
               <span class="t-label">Графік роботи</span>
               <div class="hours-list">
@@ -1149,9 +962,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+
+          </div><!-- /contact-grid -->
+
+        </div><!-- /wrap (info) -->
+
+        <!-- Full-width Google Map -->
+        <div class="contact-map" data-sr="up" data-delay="80">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.2!2d36.2294!3d49.9953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09b56e7c5af%3A0x1!2z0YPQuy4g0KDQuNC80LDRgNGB0YzQutCwLCAxOSwg0KXQsNGA0LrRltCy!5e0!3m2!1suk!2sua!4v1700000000000"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Нотаріус Харків — вул. Римарська, 19"
+          ></iframe>
+        </div><!-- /contact-map -->
+
       </section>
+
     </main>
 
     <!-- =====================================================
@@ -1172,170 +1003,6 @@
       </div>
     </footer>
 
-    <script>
-      (function () {
-        "use strict";
-
-        /* -- Sticky header shadow -- */
-        const hdr = document.querySelector(".site-header");
-        window.addEventListener(
-          "scroll",
-          () => {
-            hdr.style.boxShadow =
-              window.scrollY > 8 ? "0 1px 20px rgba(26,26,24,.08)" : "none";
-          },
-          { passive: true },
-        );
-
-        /* -- Mobile hamburger -- */
-        const ham = document.getElementById("hamburger");
-        const panel = document.getElementById("mobPanel");
-        const overlay = document.getElementById("mobOverlay");
-        const close = document.getElementById("mobClose");
-        function openMenu() {
-          ham.classList.add("open");
-          ham.setAttribute("aria-expanded", "true");
-          panel.classList.add("open");
-          overlay.style.display = "block";
-          requestAnimationFrame(() => overlay.classList.add("show"));
-          document.body.style.overflow = "hidden";
-        }
-        function closeMenu() {
-          ham.classList.remove("open");
-          ham.setAttribute("aria-expanded", "false");
-          panel.classList.remove("open");
-          overlay.classList.remove("show");
-          document.body.style.overflow = "";
-          setTimeout(() => {
-            overlay.style.display = "none";
-          }, 350);
-        }
-        ham && ham.addEventListener("click", openMenu);
-        close && close.addEventListener("click", closeMenu);
-        overlay && overlay.addEventListener("click", closeMenu);
-        document
-          .querySelectorAll(".mob-link")
-          .forEach((l) => l.addEventListener("click", closeMenu));
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
-
-        /* -- Scroll reveal -- */
-        const els = document.querySelectorAll("[data-sr]");
-        if ("IntersectionObserver" in window) {
-          const io = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((e) => {
-                if (e.isIntersecting) {
-                  const d = +(e.target.dataset.delay || 0);
-                  setTimeout(() => e.target.classList.add("in"), d);
-                  io.unobserve(e.target);
-                }
-              });
-            },
-            { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-          );
-          els.forEach((el) => io.observe(el));
-        } else {
-          els.forEach((el) => el.classList.add("in"));
-        }
-
-        /* -- Contact form — Formspree -- */
-        const form = document.getElementById("contactForm");
-        if (form) {
-          form.addEventListener("submit", async function (e) {
-            e.preventDefault();
-
-            const btn = this.querySelector("[type=submit]");
-            const btnLabel = btn.querySelector("span");
-            const originalText = btnLabel.textContent;
-
-            // Basic validation
-            const name = form.querySelector("#name").value.trim();
-            const phone = form.querySelector("#phone").value.trim();
-            if (!name || !phone) {
-              showFormMessage("error", "Будь ласка, вкажіть ім'я та телефон.");
-              return;
-            }
-
-            // Sending state
-            btnLabel.textContent = btn.dataset.sending || "Надсилаємо…";
-            btn.disabled = true;
-
-            try {
-              const response = await fetch(form.action, {
-                method: "POST",
-                body: new FormData(form),
-                headers: { Accept: "application/json" },
-              });
-
-              if (response.ok) {
-                // Success state
-                btnLabel.textContent = btn.dataset.sent || "Надіслано ✓";
-                btn.style.background = "#2A6E4A";
-                btn.style.borderColor = "#2A6E4A";
-                btn.style.color = "#fff";
-                showFormMessage(
-                  "success",
-                  "Дякуємо! Ми зв'яжемося з вами протягом 2 годин.",
-                );
-                form.reset();
-
-                // Reset button after 5s
-                setTimeout(() => {
-                  btnLabel.textContent = originalText;
-                  btn.disabled = false;
-                  btn.style.background = "";
-                  btn.style.borderColor = "";
-                  btn.style.color = "";
-                }, 5000);
-              } else {
-                const data = await response.json();
-                const msg =
-                  data?.errors?.map((e) => e.message).join(", ") ||
-                  "Щось пішло не так.";
-                throw new Error(msg);
-              }
-            } catch (err) {
-              btnLabel.textContent = originalText;
-              btn.disabled = false;
-              showFormMessage(
-                "error",
-                "Помилка: " +
-                  err.message +
-                  " Спробуйте ще раз або зателефонуйте нам.",
-              );
-            }
-          });
-
-          // Helper — inserts a status message below the form
-          function showFormMessage(type, text) {
-            let msg = form.parentElement.querySelector(".form-status-msg");
-            if (!msg) {
-              msg = document.createElement("p");
-              msg.className = "form-status-msg";
-              form.parentElement.appendChild(msg);
-            }
-            msg.textContent = text;
-            msg.style.cssText = [
-              "margin-top: 12px",
-              "font-size: 13px",
-              "font-weight: 500",
-              "line-height: 1.5",
-              "padding: 12px 16px",
-              "border-left: 3px solid " +
-                (type === "success" ? "#2A6E4A" : "#c0392b"),
-              "background: " +
-                (type === "success"
-                  ? "rgba(42,110,74,0.06)"
-                  : "rgba(192,57,43,0.06)"),
-              "color: " + (type === "success" ? "#2A6E4A" : "#c0392b"),
-            ].join(";");
-            // Auto-remove after 8s
-            setTimeout(() => msg && msg.remove(), 8000);
-          }
-        }
-      })();
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
